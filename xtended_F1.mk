@@ -12,11 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from UMIDIGI F1 device
 $(call inherit-product, device/umidigi/F1/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common MSM-XTENDED stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+XTENDED_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_F1
+PRODUCT_NAME := xtended_F1
 PRODUCT_DEVICE := F1
 PRODUCT_BRAND := UMIDIGI
 PRODUCT_MODEL := F1
